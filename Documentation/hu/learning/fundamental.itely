@@ -1222,9 +1222,9 @@ VerseFour  = \lyricmode {
 }
 @end lilypond
 
-@cindex verse and refrain
+@cindex strófák és refrének
 
-A példát azzal fejezzük be, hogy megmutatjuk hogyan lehet leírni egy olyan verszakot, 
+A példát azzal fejezzük be, hogy megmutatjuk hogyan lehet leírni egy olyan strófát, 
 ami kétféle refrénnel folytatódik, két ötvonalas kottában leírni.
 Az egymást követő (szekvenciális) és egyidejű (szimultán) részek leírása
 egy kottán belül elég trükkös, úgyhogy a magyarázatot óvatosan kövessük!
@@ -1274,8 +1274,8 @@ could be introduced here in the same way.
 
 @example
 <<
-  \refrainnotesA
-  \new Lyrics \lyricsto verse @{
+  \refrenhangokA
+  \new Lyrics \lyricsto "versszak" @{
     \refrenszovegA
   @}
   \new Staff <<
@@ -1308,11 +1308,10 @@ refrenhangokA= \relative c'' {
 @funindex \book
 @funindex book
 
-However, although this is an interesting and useful exercise to
-help you to understand how sequential and simultaneous blocks work,
-in practice one would perhaps choose to code this as two
-@code{\score} blocks within an implicit @code{\book} block, as
-follows:
+Habár ez egy érdekes és hasznos példa arra, hogy megértsük hogyan működnek
+az egymásutáni és egyidejű blokkok, gyakorlatban valószínűleg a többség ezt két
+@code{\score} blokként írná meg egy implicit  @code{\book} blokkon belül, valahogy így:
+
 
 @lilypond[quote,verbatim,ragged-right]
 versenotes = \relative c'' {
@@ -1382,10 +1381,8 @@ Notation Reference: @ruser{Vocal music}.
 @translationof Contexts and engravers
 
 
-Kontextusok és ábrázolók have been mentioned informally
-in earlier sections; we now must look at
-these concepts in more detail, as they are important
-in the fine-tuning of LilyPond output.
+Kontextusok és ábrázolók korábban említésre kerültek; viszont most részletesebben
+foglalkozunk a fogalommal, mivel ezeket használhatjuk a LilyPond kimeneti eredményének finomhangolására.
 
 
 @menu
