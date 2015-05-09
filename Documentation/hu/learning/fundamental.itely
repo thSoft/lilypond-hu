@@ -1076,8 +1076,7 @@ Notation Reference: @ruser{Multiple voices}.
 @subsection Szólamok és vokális zene
 @translationof Voices and vocals
 
-Vocal music presents a special difficulty: we need to combine two
-expressions -- notes and lyrics.
+A vokális zene speciális nehézséget jelent: két kifejezést kell egyesíteni -- hangokat és a szöveget.
 
 @funindex \new Lyrics
 @funindex \lyricsto
@@ -1086,13 +1085,12 @@ expressions -- notes and lyrics.
 @cindex Lyrics context, creating
 @cindex lyrics, linking to voice
 
-You have already seen the @code{\addlyrics@{@}} command, which
-handles simple scores well.  However, this technique is
-quite limited.  For more complex music, you must introduce the
-lyrics in a @code{Lyrics} context using @code{\new Lyrics} and
-explicitly link
-the lyrics to the notes with @code{\lyricsto@{@}}, using the
-name assigned to the Voice.
+Korábban már találkoztunk a @code{\addlyrics@{@}} paranccsal, ami
+az egyszerű kottákhoz elegendő. Azonban ez a módszer eléggé korlátolt.
+Bonyolultabb zene esetén, muszáj bevezetni a @code{Lyrics} 
+környezetet a @code{\new Lyrics} paranccsal és közvetlenül összekötni a 
+dalszöveget a hangjegyekkel. A @code{\lyricsto@{@}} parancs használatával
+hozzárendelhetjük a szöveget a megfelelő szólamhoz.
 
 @lilypond[quote,verbatim,fragment]
 <<
@@ -1107,21 +1105,20 @@ name assigned to the Voice.
 >>
 @end lilypond
 
-Note that the lyrics must be linked to a @code{Voice} context,
-@emph{not} a @code{Staff} context.  This is a case where it is
-necessary to create @code{Staff} and @code{Voice} contexts
-explicitly.
+Megjegyzés: a dalszövegnek egy @code{Voice} környezethez kell kapcsolódnia,
+@emph{nem} @code{Staff} környezethez.  Ez egy olyan eset, amikor
+muszáj közvetlenül készíteni @code{Staff} és @code{Voice} környezetet is.
 
 @cindex lyrics and beaming
 @cindex beaming and lyrics
 @funindex \autoBeamOff
 @funindex autoBeamOff
 
-The automatic beaming which LilyPond uses by default works well
-for instrumental music, but not so well for music with lyrics,
-where beaming is either not required at all or is used to indicate
-melismata in the lyrics.  In the example above we use the command
-@code{\autoBeamOff} to turn off the automatic beaming.
+Az automatikus gerendázás, amit a LilyPnd használ jól működik
+a hangszeres zenére, de nem túl jó a dalszövegek esetén,
+amikor előfordul, hogy nincs is szükség gerendákra vagy  is used to indicate
+melismata in the lyrics.  A fenti példában az
+@code{\autoBeamOff} paranccsal kikapcsoltuk az automatikus gerendázást.
 
 @funindex \new ChoirStaff
 @funindex ChoirStaff
