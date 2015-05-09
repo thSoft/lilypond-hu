@@ -1114,7 +1114,7 @@ muszáj közvetlenül készíteni @code{Staff} és @code{Voice} környezetet is.
 @funindex \autoBeamOff
 @funindex autoBeamOff
 
-Az automatikus gerendázás, amit a LilyPnd használ jól működik
+Az automatikus gerendázás, amit a LilyPond használ jól működik
 a hangszeres zenére, de nem túl jó a dalszövegek esetén,
 amikor előfordul, hogy nincs is szükség gerendákra vagy  is used to indicate
 melismata in the lyrics.  A fenti példában az
@@ -1127,13 +1127,13 @@ melismata in the lyrics.  A fenti példában az
 @cindex vocal score structure
 @cindex choir staff
 
-Let us reuse the earlier example from Judas Maccabæus to
-illustrate this more flexible technique.  We first recast
-it to use variables so the music and lyrics can be separated
-from the staff structure.  We also introduce a ChoirStaff
-bracket.  The lyrics themselves must be introduced with
-@code{\lyricmode} to ensure they are interpreted as lyrics
-rather than music.
+A korábbi Judas Maccabæus példát használva
+nézzünk meg egy rugalmasabb módszert.  Először írjuk újra
+változók használatával, így a zene és a dalszöveg a kotta struktúrájától 
+külön válik. Vezessünk be egy ChoirStaff bracket-et.
+A dalszöveget magát egy @code{\lyricmode} paranccsal
+vezetjük be, ezzel biztosítva, hogy dalszövegként és 
+ne zeneként legyen értelmezve.
 
 @lilypond[quote,verbatim]
 global = { \time 6/8 \partial 8 \key f \major}
@@ -1170,23 +1170,22 @@ SopTwoLyrics = \lyricmode {
 }
 @end lilypond
 
-This is the basic structure of all vocal scores.  More staves may be
-added as required, more voices may be added to the staves, more verses
-may be added to the lyrics, and the variables containing the music can
-easily be placed in separate files should they become too long.
+Ilyen az alapvető felépítése, struktúrája minden vokális zenének. Olykor több staves 
+szükséges vagy több szólam van egy-egy stave-ban, esetleg több versszakból áll a dalszöveg-
+A változók, amik a zenét tartalmazzák, könnyen külön fájlokba is rendezhetők, ha túl hosszúak lennének.
 
 @cindex hymn structure
 @cindex SATB structure
 @cindex vocal scores with multiple verses
 @cindex multiple vocal verses
-@cindex verses, multiple vocal
+@cindex versszakok, multiple vocal
 
-Here is an example of the first line of a hymn with four
-verses, set for SATB.  In this case the words for all four
-parts are the same.  Note how we use variables to separate the
-music notation and words from the staff structure.  See too
-how a variable, which we have chosen to call @q{TimeKey}, is used
-to hold several commands for use within the two staves.  In other
+Itt egy példa egy egyházi ének első sorára, aminek négy
+verszaka van, set for SATB. Ebben az esetben a szavak mind a négy
+szólamra azonosak. Figyeljük meg, hogyan használjuk a változókat arra, 
+hogy különválasszuk a kottát és a szavakat a kotta felépítésétől.
+Figyeljük meg, hogy a  @q{TimeKey} nevű változó számos parancsot tartalmaz
+for use within the two staves.  In other
 examples this is often called @q{global}.
 
 @lilypond[quote,verbatim]
