@@ -1184,9 +1184,7 @@ Itt egy példa egy egyházi ének első sorára, aminek négy
 verszaka van, set for SATB. Ebben az esetben a szavak mind a négy
 szólamra azonosak. Figyeljük meg, hogyan használjuk a változókat arra, 
 hogy különválasszuk a kottát és a szavakat a kotta felépítésétől.
-Figyeljük meg, hogy a  @q{TimeKey} nevű változó számos parancsot tartalmaz
-for use within the two staves.  In other
-examples this is often called @q{global}.
+Figyeljük meg, hogy a  @q{TimeKey} nevű változó számos parancsot tartalmaz for use within the two staves.  Más példákban ez gyakran  @q{global} néven szerepel.
 
 @lilypond[quote,verbatim]
 TimeKey = { \time 4/4 \partial 4 \key c \major}
@@ -1225,10 +1223,8 @@ VerseFour  = \lyricmode {
 
 @cindex verse and refrain
 
-We end with an example to show how we might code a solo verse which
-continues into a two-part refrain in two staves.  The positioning
-of the sequential and simultaneous sections to achieve this within
-a single score is quite tricky, so follow the explanation carefully!
+A példát azzal fejezzük be, hogy megmutatjuk hogyan lehet leírni egy olyan verszakot, ami kétféle refrénnel folytatódik, két ötvonalas kottában leírni.
+Az egymást követő (szekvenciális) és egyidejű (szimultán) részek leírása egy kottán belül elég trükkös, úgyhogy a magyarázatot óvatosan kövessük!
 
 Let's start with a score block containing a @code{ChoirStaff}, as
 we would like the brace to appear at the start of the chorus.
