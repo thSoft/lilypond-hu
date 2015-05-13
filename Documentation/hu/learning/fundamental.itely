@@ -1276,7 +1276,7 @@ could be introduced here in the same way.
   }
   \new Staff <<
     \new Voice = "refrenB" {
-      \refrehangokB
+      \refrenhangokB
     }
     \new Lyrics \lyricsto "refrenB" {
       \refrenszovegB
