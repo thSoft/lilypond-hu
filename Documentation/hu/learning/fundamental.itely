@@ -311,7 +311,7 @@ feleleveníteni, az @ref{Egyszerű dalok kottázása} c. részben olvashatunk r�
 @end lilypond
 
 Most megvan a teljes struktúra. Az énekszólam egy @code{Voice} kontextust
-tartalmaz a hangoknak, és egy strófányi dalszöveget. A zongoraszólam pedig
+tartalmaz a hangoknak, és egy versszaknyi dalszöveget. A zongoraszólam pedig
 a jobb- és balkéz kottasorait tartalmazza.
 
 Most elkezdhetjük kitölteni a hangokat. Elkezdhetnénk közvetlenül a Voice
@@ -1114,11 +1114,10 @@ muszáj közvetlenül készíteni @code{Staff} és @code{Voice} környezetet is.
 @funindex \autoBeamOff
 @funindex autoBeamOff
 
-Az automatikus gerendázás, amit a LilyPond használ jól működik
+Az automatikus gerendázás -, amit a LilyPond használ - jól működik
 a hangszeres zenére, de nem túl jó a dalszövegek esetén,
-amikor előfordul, hogy nincs is szükség gerendákra vagy  is used to indicate
-melismata in the lyrics.  A fenti példában az
-@code{\autoBeamOff} paranccsal kikapcsoltuk az automatikus gerendázást.
+amikor előfordul, hogy nincs is szükség gerendákra vagy ha épp melizmát jeleznénk a dalszövegben.
+A fenti példában az @code{\autoBeamOff} paranccsal kikapcsoltuk az automatikus gerendázást.
 
 @funindex \new ChoirStaff
 @funindex ChoirStaff
@@ -1222,9 +1221,9 @@ VerseFour  = \lyricmode {
 }
 @end lilypond
 
-@cindex strófák és refrének
+@cindex versszakok és refrének
 
-A példát azzal fejezzük be, hogy megmutatjuk hogyan lehet leírni egy olyan strófát, 
+A példát azzal fejezzük be, hogy megmutatjuk hogyan lehet leírni egy olyan versszakot, 
 ami kétféle refrénnel folytatódik, két ötvonalas kottában leírni.
 Az egymást követő (szekvenciális) és egyidejű (szimultán) részek leírása
 egy kottán belül elég trükkös, úgyhogy a magyarázatot óvatosan kövessük!
