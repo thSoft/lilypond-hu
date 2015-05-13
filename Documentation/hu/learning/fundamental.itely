@@ -1270,13 +1270,13 @@ could be introduced here in the same way.
 
 @example
 <<
-  \refrennotesA
+  \refrenhangokA
   \new Lyrics \lyricsto versszak {
     \refrenszovegA
   }
   \new Staff <<
     \new Voice = "refrenB" {
-      \refrennotesB
+      \refrehangokB
     }
     \new Lyrics \lyricsto "refrenB" {
       \refrenszovegB
