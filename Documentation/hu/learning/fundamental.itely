@@ -1228,16 +1228,14 @@ ami kétféle refrénnel folytatódik, két ötvonalas kottában leírni.
 Az egymást követő (szekvenciális) és egyidejű (szimultán) részek leírása
 egy kottán belül elég trükkös, úgyhogy a magyarázatot óvatosan kövessük!
 
-Let's start with a score block containing a @code{ChoirStaff}, as
-we would like the brace to appear at the start of the chorus.
-Normally you would need angle brackets after @code{\new ChoirStaff}
-to bring in all the staves in parallel, but here we want to
-defer the parallelism during the solo so we use braces, although
-angle brackets here wouldn't hurt.  Inside the @code{ChoirStaff} we
-want first the staff which will contain the verse.  This must
-contain notes and lyrics in parallel, so here we need angle
-brackets around the @code{\new Voice} and @code{\new Lyrics} to
-start them at the same time:
+Kezdjük egy score blokkal, ami tartalmaz egy @code{ChoirStaff}-ot, 
+úgy beágyazva, ahogy szeretnénk, hogy látszódjon a kórusrész kezdetén. 
+Alapesetben szükség lenne hegyes zárójelekre ( << és >> ) a @code{\new ChoirStaff} után, 
+hogy minden kottasor párhuzamos legyen, de most itt el szeretnénk kerülni a 
+párhuzamosságot a szóló résznél, ezért zárójeleket használunk - bár a 
+hegyes zárójelek nem árthatnak. A @code{ChoirStaff}-on belül először szerepeljen az
+a kottasor, ami a versszakot tartalmazni fogja. Hangokat és dalszöveget kell párhuzamosan tartalmaznia, 
+tehát szükség lesz hegyes zárójelre a @code{\new Voice} and @code{\new Lyrics} esetén, hogy egy időben kezdődjenek:
 
 @lilypond[quote,verbatim,ragged-right]
 versenotes = \relative c'' {
