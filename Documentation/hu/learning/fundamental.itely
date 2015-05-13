@@ -1238,7 +1238,7 @@ a kottasor, ami a versszakot tartalmazni fogja. Hangokat és dalszöveget kell p
 tehát szükség lesz hegyes zárójelre a @code{\new Voice} and @code{\new Lyrics} esetén, hogy egy időben kezdődjenek:
 
 @lilypond[quote,verbatim,ragged-right]
-versenotes = \relative c'' {
+versszakhangok = \relative c'' {
   \clef "treble"
   \key g \major
   \time 3/4
@@ -1250,10 +1250,10 @@ versewords = \lyricmode {
 \score {
   \new ChoirStaff {
     \new Staff <<
-      \new Voice = "verse" {
-        \versenotes \break
+      \new Voice = "versszak" {
+        \versszakhangok \break
       }
-      \new Lyrics \lyricsto verse {
+      \new Lyrics \lyricsto versszak {
         \versewords
       }
     >>
