@@ -1244,20 +1244,19 @@ versszakhangok = \relative c'' {
   \time 3/4
   g g g | b b b |
 }
-versewords = \lyricmode {
+
+szoveg = \lyricmode {
   One two three four five six
 }
 \score {
-  \new ChoirStaff {
-    \new Staff <<
-      \new Voice = "versszak" {
-        \versszakhangok \break
-      }
-      \new Lyrics \lyricsto versszak {
-        \versewords
-      }
-    >>
-  }
+  \new Staff <<
+    \new Voice = "versszak" {
+      \versszakhangok
+    }
+    \new Lyrics \lyricsto "versszak" {
+      \szoveg
+    }
+  >>
 }
 @end lilypond
 
@@ -1271,17 +1270,17 @@ could be introduced here in the same way.
 
 @example
 <<
-  \refrenhangokA
-  \new Lyrics \lyricsto "versszak" @{
+  \refrennotesA
+  \new Lyrics \lyricsto versszak {
     \refrenszovegA
-  @}
+  }
   \new Staff <<
-    \new Voice = "refrenB" @{
+    \new Voice = "refrenB" {
+      \refrennotesB
+    }
+    \new Lyrics \lyricsto "refrenB" {
       \refrenszovegB
-    @}
-    \new Lyrics \lyricsto "refrenB" @{
-      \refrenszovegB
-    @}
+    }
   >>
 >>
 @end example
@@ -1296,9 +1295,50 @@ versszakhangok = \relative c'' {
   \time 3/4
   g g g | b b b |
 }
-refrenhangokA= \relative c'' {
+refrenhangokA = \relative c'' {
   \time 2/4
-  c c | g
+  c c | g g \bar "|."
+}
+refrenhangokB = \relative c {
+  \clef "bass"
+  \key g \major
+  c e | d d |
+}
+szoveg = \lyricmode {
+  One two three four five six
+}
+refrenszovegA = \lyricmode {
+  la la la la
+}
+refrenszovegB = \lyricmode {
+  dum dum dum dum
+}
+\score {
+  \new ChoirStaff {
+    \new Staff <<
+      \new Voice = "versszak" {
+        \versszakhangok \break
+        <<
+          \refrenhangokA
+          \new Lyrics \lyricsto "versszak" {
+            \refrenszovegA
+          }
+          \new Staff <<
+            \new Voice = "refrenB" {
+              \refrenhangokB
+            }
+            \new Lyrics \lyricsto "refrenB" {
+              \refrenszovegB
+            }
+          >>
+        >>
+      }
+      \new Lyrics \lyricsto "versszak" {
+        \szoveg
+      }
+    >>
+  }
+}
 @end lilypond
 
 @cindex book, example of using
