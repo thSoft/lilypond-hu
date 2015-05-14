@@ -1169,8 +1169,8 @@ SopTwoLyrics = \lyricmode {
 }
 @end lilypond
 
-Ilyen az alapvető felépítése, struktúrája minden vokális zenének. Olykor több staves 
-szükséges vagy több szólam van egy-egy stave-ban, esetleg több versszakból áll a dalszöveg-
+Ilyen az alapvető felépítése, struktúrája minden vokális zenének. Olykor több kottasor 
+szükséges vagy több szólam van egy-egy kottasorban, esetleg több versszakból áll a dalszöveg-
 A változók, amik a zenét tartalmazzák, könnyen külön fájlokba is rendezhetők, ha túl hosszúak lennének.
 
 @cindex hymn structure
@@ -1265,8 +1265,8 @@ Ezzel kész a verssor.
 Folytatni szeretnénk a refrenA-val ugyanabban a ötvonalas kottában, míg
 a második ötvonal ezzel párhuzamosan lenne a refrenB-nek, tehát
 ez egy párhuzamos rész, ami rögtön a @code{\break} után jön in the verse Voice.
-Igen, @emph{within} the verse Voice! Íme a párhuzamos rész. More staves
-could be introduced here in the same way.
+Igen, @emph{within} the verse Voice! Íme a párhuzamos rész. Több kottasort 
+írhatunk hasonló módon. 
 
 @example
 <<
