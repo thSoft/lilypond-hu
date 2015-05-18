@@ -1251,14 +1251,16 @@ szoveg = \lyricmode {
   One two three four five six
 }
 \score {
+ \new ChoirStaff {
   \new Staff <<
     \new Voice = "versszak" {
-      \versszakhangok
+      \versszakhangok  \break
     }
     \new Lyrics \lyricsto "versszak" {
       \szoveg
     }
   >>
+  }
 }
 @end lilypond
 
@@ -1273,16 +1275,16 @@ Igen, a a "versszak" nevű szólamon @emph{belül}! Íme a párhuzamos rész. T�
 @example
 <<
   \refrenhangokA
-  \new Lyrics \lyricsto versszak {
+  \new Lyrics \lyricsto versszak @{
     \refrenszovegA
-  }
+  @}
   \new Staff <<
-    \new Voice = "refrenB" {
+    \new Voice = "refrenB" @{
       \refrenhangokB
-    }
-    \new Lyrics \lyricsto "refrenB" {
+    @}
+    \new Lyrics \lyricsto "refrenB" @{
       \refrenszovegB
-    }
+    @}
   >>
 >>
 @end example
