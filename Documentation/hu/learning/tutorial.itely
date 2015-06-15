@@ -407,7 +407,7 @@ Az @notation{ütemmutató} beállítására a @code{\time} parancs szolgál:
 @node Ütem jelzése
 @unnumberedsubsubsec Ütem jelzése
 
-@cindex üte, jelzése
+@cindex ütem jelzése
 @cindex metronóm jelzés
 
 @funindex \tempo
