@@ -404,6 +404,36 @@ Az @notation{ütemmutató} beállítására a @code{\time} parancs szolgál:
 @end lilypond
 
 
+@node Ütem jelzése
+@unnumberedsubsubsec Ütem jelzése
+
+@cindex tempó jelzése
+@cindex metronóm jelzés
+
+@funindex \tempo
+@funindex tempo
+
+Fogalomtár: @rglos{tempo indication}, @rglos{metronome}.
+
+Az @notation{ütem jelzése} és @notation{metronóm jelzés} 
+a @code{\tempo} parancs segítségével álítható be:
+
+@lilypond[verbatim,quote]
+\relative c'' {
+  \time 3/4
+  \tempo "Andante"
+  a4 a a
+  \time 6/8
+  \tempo 4. = 96
+  a4. a
+  \time 4/4
+  \tempo  "Presto" 4 = 120
+  a4 a a a
+}
+@end lilypond
+
+
+
 @subheading Kulcs
 
 @cindex kulcs
