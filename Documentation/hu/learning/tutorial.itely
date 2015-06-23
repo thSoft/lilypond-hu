@@ -251,7 +251,7 @@ hang az előzőhöz a lehető legközelebb helyezkedik el: az első @code{c} az
 egyvonalas c-hez legközelebb eső c hangot jelenti, vagyis az egyvonalas c-t.
 A második, d hang ehhez a hanghoz esik legközelebb, vagyis ugyanúgy az
 egyvonalas oktávba kerül.
-Legfeljebb kvárt nagyságú hangközöket tartalmazó dallamok tápláhatók be így a
+Legfeljebb kvárt nagyságú hangközöket tartalmazó dallamok táplálhatók be így a
 legegyszerűbben.
 
 @lilypond[verbatim,quote]
@@ -407,7 +407,7 @@ Az @notation{ütemmutató} beállítására a @code{\time} parancs szolgál:
 @node Ütem jelzése
 @unnumberedsubsubsec Ütem jelzése
 
-@cindex tempó jelzése
+@cindex ütem jelzése
 @cindex metronóm jelzés
 
 @funindex \tempo
