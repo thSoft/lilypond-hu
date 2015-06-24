@@ -192,7 +192,6 @@ veszi.
 Természetesen minden megváltoztatható, de a legtöbb esetben az alapbeállítás
 megfelelő.
 
-
 @node Hangmagasság
 @unnumberedsubsubsec Hangmagasság
 @translationof Pitches
@@ -468,8 +467,8 @@ Referencia: @ruser{Writing pitches},
 @funindex %
 @funindex %@{ ... %@}
 
-A LilyPond bemeneti fájljai sok tekintetben hasonlítanak a programkódokhoz.
-Tartalmaznak verziószámot, érzékenyek a kis- és nagybetűk különbségére, az üres helyek (szóközök, újsorok,
+A LilyPond nyelve sok tekintetben hasonlít bizonyos programnyelvekhez.
+Tartalmaz verziószámot, érzékeny a kis- és nagybetűk különbségére, az üres helyek (szóközök, újsorok,
 tabulátorok stb.) pedig nem számítanak. Ún. kifejezéseket lehet alkotni
 kapcsos zárójelek @{ @} segítségével, megjegyzéseket pedig @code{%} után
 vagy @w{@code{%@{ ... %@}}} közé lehet írni.
@@ -679,7 +678,7 @@ kipróbálható:
 @c no verbatim here
 @lilypond[quote]
 \relative {
-  c''4-\markup { \bold \huge { Click here. } }
+  c''4-\markup { \bold \huge { Ide kell kattintani! } }
 }
 @end lilypond
 
