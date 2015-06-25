@@ -97,7 +97,7 @@ egyértelműen látszik, a figyelmeztető üzenet célravezetően
 hívja fel a figyelmet a hiányzó @code{4}-re a 3. ütemben.
 
 @seealso
-A kottaírás kézikönyve (Kottaírás):
+A kottaírás kézikönyve:
 @ruser{Bar and bar number checks}.
 
 
@@ -238,7 +238,7 @@ az @ruser{Automatic accidentals} c. fejezetben.
 
 
 @seealso
-A kottaírás kézikönyve (Kottaírás):
+A kottaírás kézikönyve:
 @ruser{Note names in other languages},
 @ruser{Accidentals}, 
 @ruser{Automatic accidentals},
@@ -343,7 +343,7 @@ c4~( c8 d~ 4 e)
 
 
 @seealso
-A kottaírás kézikönyve (Kottaírás):
+A kottaírás kézikönyve:
 @ruser{Ties},
 @ruser{Slurs},
 @ruser{Phrasing slurs}.
@@ -448,7 +448,7 @@ c2\< c2\ff\> c2 c2\!
 
 
 @seealso
-A kottaírás kézikönyve (Kottaírás):
+A kottaírás kézikönyve:
 @ruser{Articulations and ornamentations},
 @ruser{Fingering instructions},
 @ruser{Dynamics}.
@@ -482,7 +482,7 @@ a2_\markup {
 
 
 @seealso
-A kottaírás kézikönyve (Kottaírás): 
+A kottaírás kézikönyve: 
 @ruser{Writing text}.
 
 
@@ -533,7 +533,7 @@ a8 c b4 d8. c16 b4 |
 
 
 @seealso
-A kottaírás kézikönyve (Kottaírás):
+A kottaírás kézikönyve:
 @ruser{Automatic beams},
 @ruser{Manual beams}.
 
@@ -626,7 +626,7 @@ c2 \acciaccatura b16 c2
 
 
 @seealso
-A kottaírás kézikönyve (Kottaírás): 
+A kottaírás kézikönyve: 
 @ruser{Grace notes},
 @ruser{Tuplets},
 @ruser{Upbeats}.
@@ -898,7 +898,7 @@ szolgáló @w{@code{\new ChoirStaff}}. Ezek hasonló kontextusok, mint a
 
 
 @seealso
-A kottaírás kézikönyve (Kottaírás):
+A kottaírás kézikönyve:
 @ruser{Keyboard and other multi-staff instruments},
 @ruser{Displaying staves}.
 
@@ -940,7 +940,7 @@ r4 <c e g>8.\p <c f a>16( <c e g>4-. <c f a>) |
 @end lilypond
 
 @seealso
-A kottaírás kézikönyve (Kottaírás):
+A kottaírás kézikönyve:
 @ruser{Chorded notes}.
 
 @node Több szólam egy kottasoron belül
@@ -968,7 +968,7 @@ elmagyarázza a témakört.
 Tankönyv: 
 @ref{A szólamok zenét tartalmaznak}.
 
-A kottaírás kézikönyve (Kottaírás):
+A kottaírás kézikönyve:
 @ruser{Simultaneous notes}.
 
 @node Dalok
@@ -1189,7 +1189,7 @@ kezdetű áriájában a @notation{Largo} szó @notation{go} szótagját és az
 
 
 @seealso
-A kottaírás kézikönyve (Kottaírás):
+A kottaírás kézikönyve:
 @ruser{Vocal music}.
 
 
@@ -1231,7 +1231,7 @@ változók segítségével. Ez a módszer a @ref{Művek szervezettebbé tétele 
 c. szakaszban olvasható.
 
 @seealso
-A kottaírás kézikönyve (Kottaírás):
+A kottaírás kézikönyve:
 @ruser{Vocal music}.
 
 
