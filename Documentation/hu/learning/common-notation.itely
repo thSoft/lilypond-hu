@@ -132,8 +132,8 @@ alkalmazza -- kérjük olvassa el a figyelmeztetés az oldal alján.}
 Fogalomtár: @rglos{sharp}, @rglos{flat}, @rglos{double sharp},
 @rglos{double flat}, @rglos{accidental}.
 
-Note-names in LilyPond identify pitches.  For example, @code{c}
-always means C-natural, regardless of the key signature.
+A hangok neve LilyPondban jelzi a módosítójelet is. Például a @code{c} mindig 
+természetes (módosítás nélküli) c hangot jelez, az előjegyzéstől függetlenül.
 
 @notation{Keresztes} hangot a hang neve után közvetlenül @code{is} utótagot
 írva kapunk, @notation{bés} hangot pedig @code{es}-t (asz és esz
