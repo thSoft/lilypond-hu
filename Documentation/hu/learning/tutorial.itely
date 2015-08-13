@@ -393,8 +393,6 @@ Az @notation{ütemmutató} beállítására a @code{\time} parancs szolgál:
 }
 @end lilypond
 
-
-<<<<<<< HEAD
 @node Ütem jelzése
 @unnumberedsubsubsec Ütem jelzése
 
@@ -426,11 +424,9 @@ a @code{\tempo} parancs segítségével álítható be:
 
 
 @subheading Kulcs
-=======
 @node Kulcs
 @unnumberedsubsubsec Kulcs
 @translationof Clef
->>>>>>> 54ba6b8... Doc-hu: updating tutorial.itely
 
 @cindex kulcs
 @cindex violinkulcs
